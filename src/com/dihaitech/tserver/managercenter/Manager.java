@@ -45,9 +45,9 @@ public class Manager implements org.apache.thrift.TBase<Manager, Manager._Fields
   private static final org.apache.thrift.protocol.TField ENAME_FIELD_DESC = new org.apache.thrift.protocol.TField("ename", org.apache.thrift.protocol.TType.STRING, (short)5);
   private static final org.apache.thrift.protocol.TField LOGO_FIELD_DESC = new org.apache.thrift.protocol.TField("logo", org.apache.thrift.protocol.TType.STRING, (short)6);
   private static final org.apache.thrift.protocol.TField STATUS_FIELD_DESC = new org.apache.thrift.protocol.TField("status", org.apache.thrift.protocol.TType.I32, (short)7);
-  private static final org.apache.thrift.protocol.TField DEPARTMENT_ID_FIELD_DESC = new org.apache.thrift.protocol.TField("department_id", org.apache.thrift.protocol.TType.I32, (short)8);
-  private static final org.apache.thrift.protocol.TField POSITION_ID_FIELD_DESC = new org.apache.thrift.protocol.TField("position_id", org.apache.thrift.protocol.TType.I32, (short)9);
-  private static final org.apache.thrift.protocol.TField ROLE_ID_FIELD_DESC = new org.apache.thrift.protocol.TField("role_id", org.apache.thrift.protocol.TType.I32, (short)10);
+  private static final org.apache.thrift.protocol.TField DEPARTMENT_ID_FIELD_DESC = new org.apache.thrift.protocol.TField("departmentId", org.apache.thrift.protocol.TType.I32, (short)8);
+  private static final org.apache.thrift.protocol.TField POSITION_ID_FIELD_DESC = new org.apache.thrift.protocol.TField("positionId", org.apache.thrift.protocol.TType.I32, (short)9);
+  private static final org.apache.thrift.protocol.TField ROLE_ID_FIELD_DESC = new org.apache.thrift.protocol.TField("roleId", org.apache.thrift.protocol.TType.I32, (short)10);
   private static final org.apache.thrift.protocol.TField CREATOR_FIELD_DESC = new org.apache.thrift.protocol.TField("creator", org.apache.thrift.protocol.TType.STRING, (short)11);
   private static final org.apache.thrift.protocol.TField CREATETIME_FIELD_DESC = new org.apache.thrift.protocol.TField("createtime", org.apache.thrift.protocol.TType.STRING, (short)12);
   private static final org.apache.thrift.protocol.TField LOGINTIME_FIELD_DESC = new org.apache.thrift.protocol.TField("logintime", org.apache.thrift.protocol.TType.STRING, (short)13);
@@ -66,9 +66,9 @@ public class Manager implements org.apache.thrift.TBase<Manager, Manager._Fields
   public String ename; // required
   public String logo; // required
   public int status; // required
-  public int department_id; // required
-  public int position_id; // required
-  public int role_id; // required
+  public int departmentId; // required
+  public int positionId; // required
+  public int roleId; // required
   public String creator; // required
   public String createtime; // required
   public String logintime; // required
@@ -83,9 +83,9 @@ public class Manager implements org.apache.thrift.TBase<Manager, Manager._Fields
     ENAME((short)5, "ename"),
     LOGO((short)6, "logo"),
     STATUS((short)7, "status"),
-    DEPARTMENT_ID((short)8, "department_id"),
-    POSITION_ID((short)9, "position_id"),
-    ROLE_ID((short)10, "role_id"),
+    DEPARTMENT_ID((short)8, "departmentId"),
+    POSITION_ID((short)9, "positionId"),
+    ROLE_ID((short)10, "roleId"),
     CREATOR((short)11, "creator"),
     CREATETIME((short)12, "createtime"),
     LOGINTIME((short)13, "logintime"),
@@ -174,9 +174,9 @@ public class Manager implements org.apache.thrift.TBase<Manager, Manager._Fields
   // isset id assignments
   private static final int __ID_ISSET_ID = 0;
   private static final int __STATUS_ISSET_ID = 1;
-  private static final int __DEPARTMENT_ID_ISSET_ID = 2;
-  private static final int __POSITION_ID_ISSET_ID = 3;
-  private static final int __ROLE_ID_ISSET_ID = 4;
+  private static final int __DEPARTMENTID_ISSET_ID = 2;
+  private static final int __POSITIONID_ISSET_ID = 3;
+  private static final int __ROLEID_ISSET_ID = 4;
   private byte __isset_bitfield = 0;
   public static final Map<_Fields, org.apache.thrift.meta_data.FieldMetaData> metaDataMap;
   static {
@@ -195,11 +195,11 @@ public class Manager implements org.apache.thrift.TBase<Manager, Manager._Fields
         new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
     tmpMap.put(_Fields.STATUS, new org.apache.thrift.meta_data.FieldMetaData("status", org.apache.thrift.TFieldRequirementType.DEFAULT, 
         new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.I32)));
-    tmpMap.put(_Fields.DEPARTMENT_ID, new org.apache.thrift.meta_data.FieldMetaData("department_id", org.apache.thrift.TFieldRequirementType.DEFAULT, 
+    tmpMap.put(_Fields.DEPARTMENT_ID, new org.apache.thrift.meta_data.FieldMetaData("departmentId", org.apache.thrift.TFieldRequirementType.DEFAULT, 
         new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.I32)));
-    tmpMap.put(_Fields.POSITION_ID, new org.apache.thrift.meta_data.FieldMetaData("position_id", org.apache.thrift.TFieldRequirementType.DEFAULT, 
+    tmpMap.put(_Fields.POSITION_ID, new org.apache.thrift.meta_data.FieldMetaData("positionId", org.apache.thrift.TFieldRequirementType.DEFAULT, 
         new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.I32)));
-    tmpMap.put(_Fields.ROLE_ID, new org.apache.thrift.meta_data.FieldMetaData("role_id", org.apache.thrift.TFieldRequirementType.DEFAULT, 
+    tmpMap.put(_Fields.ROLE_ID, new org.apache.thrift.meta_data.FieldMetaData("roleId", org.apache.thrift.TFieldRequirementType.DEFAULT, 
         new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.I32)));
     tmpMap.put(_Fields.CREATOR, new org.apache.thrift.meta_data.FieldMetaData("creator", org.apache.thrift.TFieldRequirementType.DEFAULT, 
         new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
@@ -224,9 +224,9 @@ public class Manager implements org.apache.thrift.TBase<Manager, Manager._Fields
     String ename,
     String logo,
     int status,
-    int department_id,
-    int position_id,
-    int role_id,
+    int departmentId,
+    int positionId,
+    int roleId,
     String creator,
     String createtime,
     String logintime,
@@ -242,12 +242,12 @@ public class Manager implements org.apache.thrift.TBase<Manager, Manager._Fields
     this.logo = logo;
     this.status = status;
     setStatusIsSet(true);
-    this.department_id = department_id;
-    setDepartment_idIsSet(true);
-    this.position_id = position_id;
-    setPosition_idIsSet(true);
-    this.role_id = role_id;
-    setRole_idIsSet(true);
+    this.departmentId = departmentId;
+    setDepartmentIdIsSet(true);
+    this.positionId = positionId;
+    setPositionIdIsSet(true);
+    this.roleId = roleId;
+    setRoleIdIsSet(true);
     this.creator = creator;
     this.createtime = createtime;
     this.logintime = logintime;
@@ -276,9 +276,9 @@ public class Manager implements org.apache.thrift.TBase<Manager, Manager._Fields
       this.logo = other.logo;
     }
     this.status = other.status;
-    this.department_id = other.department_id;
-    this.position_id = other.position_id;
-    this.role_id = other.role_id;
+    this.departmentId = other.departmentId;
+    this.positionId = other.positionId;
+    this.roleId = other.roleId;
     if (other.isSetCreator()) {
       this.creator = other.creator;
     }
@@ -308,12 +308,12 @@ public class Manager implements org.apache.thrift.TBase<Manager, Manager._Fields
     this.logo = null;
     setStatusIsSet(false);
     this.status = 0;
-    setDepartment_idIsSet(false);
-    this.department_id = 0;
-    setPosition_idIsSet(false);
-    this.position_id = 0;
-    setRole_idIsSet(false);
-    this.role_id = 0;
+    setDepartmentIdIsSet(false);
+    this.departmentId = 0;
+    setPositionIdIsSet(false);
+    this.positionId = 0;
+    setRoleIdIsSet(false);
+    this.roleId = 0;
     this.creator = null;
     this.createtime = null;
     this.logintime = null;
@@ -486,73 +486,73 @@ public class Manager implements org.apache.thrift.TBase<Manager, Manager._Fields
     __isset_bitfield = EncodingUtils.setBit(__isset_bitfield, __STATUS_ISSET_ID, value);
   }
 
-  public int getDepartment_id() {
-    return this.department_id;
+  public int getDepartmentId() {
+    return this.departmentId;
   }
 
-  public Manager setDepartment_id(int department_id) {
-    this.department_id = department_id;
-    setDepartment_idIsSet(true);
+  public Manager setDepartmentId(int departmentId) {
+    this.departmentId = departmentId;
+    setDepartmentIdIsSet(true);
     return this;
   }
 
-  public void unsetDepartment_id() {
-    __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __DEPARTMENT_ID_ISSET_ID);
+  public void unsetDepartmentId() {
+    __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __DEPARTMENTID_ISSET_ID);
   }
 
-  /** Returns true if field department_id is set (has been assigned a value) and false otherwise */
-  public boolean isSetDepartment_id() {
-    return EncodingUtils.testBit(__isset_bitfield, __DEPARTMENT_ID_ISSET_ID);
+  /** Returns true if field departmentId is set (has been assigned a value) and false otherwise */
+  public boolean isSetDepartmentId() {
+    return EncodingUtils.testBit(__isset_bitfield, __DEPARTMENTID_ISSET_ID);
   }
 
-  public void setDepartment_idIsSet(boolean value) {
-    __isset_bitfield = EncodingUtils.setBit(__isset_bitfield, __DEPARTMENT_ID_ISSET_ID, value);
+  public void setDepartmentIdIsSet(boolean value) {
+    __isset_bitfield = EncodingUtils.setBit(__isset_bitfield, __DEPARTMENTID_ISSET_ID, value);
   }
 
-  public int getPosition_id() {
-    return this.position_id;
+  public int getPositionId() {
+    return this.positionId;
   }
 
-  public Manager setPosition_id(int position_id) {
-    this.position_id = position_id;
-    setPosition_idIsSet(true);
+  public Manager setPositionId(int positionId) {
+    this.positionId = positionId;
+    setPositionIdIsSet(true);
     return this;
   }
 
-  public void unsetPosition_id() {
-    __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __POSITION_ID_ISSET_ID);
+  public void unsetPositionId() {
+    __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __POSITIONID_ISSET_ID);
   }
 
-  /** Returns true if field position_id is set (has been assigned a value) and false otherwise */
-  public boolean isSetPosition_id() {
-    return EncodingUtils.testBit(__isset_bitfield, __POSITION_ID_ISSET_ID);
+  /** Returns true if field positionId is set (has been assigned a value) and false otherwise */
+  public boolean isSetPositionId() {
+    return EncodingUtils.testBit(__isset_bitfield, __POSITIONID_ISSET_ID);
   }
 
-  public void setPosition_idIsSet(boolean value) {
-    __isset_bitfield = EncodingUtils.setBit(__isset_bitfield, __POSITION_ID_ISSET_ID, value);
+  public void setPositionIdIsSet(boolean value) {
+    __isset_bitfield = EncodingUtils.setBit(__isset_bitfield, __POSITIONID_ISSET_ID, value);
   }
 
-  public int getRole_id() {
-    return this.role_id;
+  public int getRoleId() {
+    return this.roleId;
   }
 
-  public Manager setRole_id(int role_id) {
-    this.role_id = role_id;
-    setRole_idIsSet(true);
+  public Manager setRoleId(int roleId) {
+    this.roleId = roleId;
+    setRoleIdIsSet(true);
     return this;
   }
 
-  public void unsetRole_id() {
-    __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __ROLE_ID_ISSET_ID);
+  public void unsetRoleId() {
+    __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __ROLEID_ISSET_ID);
   }
 
-  /** Returns true if field role_id is set (has been assigned a value) and false otherwise */
-  public boolean isSetRole_id() {
-    return EncodingUtils.testBit(__isset_bitfield, __ROLE_ID_ISSET_ID);
+  /** Returns true if field roleId is set (has been assigned a value) and false otherwise */
+  public boolean isSetRoleId() {
+    return EncodingUtils.testBit(__isset_bitfield, __ROLEID_ISSET_ID);
   }
 
-  public void setRole_idIsSet(boolean value) {
-    __isset_bitfield = EncodingUtils.setBit(__isset_bitfield, __ROLE_ID_ISSET_ID, value);
+  public void setRoleIdIsSet(boolean value) {
+    __isset_bitfield = EncodingUtils.setBit(__isset_bitfield, __ROLEID_ISSET_ID, value);
   }
 
   public String getCreator() {
@@ -711,25 +711,25 @@ public class Manager implements org.apache.thrift.TBase<Manager, Manager._Fields
 
     case DEPARTMENT_ID:
       if (value == null) {
-        unsetDepartment_id();
+        unsetDepartmentId();
       } else {
-        setDepartment_id((Integer)value);
+        setDepartmentId((Integer)value);
       }
       break;
 
     case POSITION_ID:
       if (value == null) {
-        unsetPosition_id();
+        unsetPositionId();
       } else {
-        setPosition_id((Integer)value);
+        setPositionId((Integer)value);
       }
       break;
 
     case ROLE_ID:
       if (value == null) {
-        unsetRole_id();
+        unsetRoleId();
       } else {
-        setRole_id((Integer)value);
+        setRoleId((Integer)value);
       }
       break;
 
@@ -792,13 +792,13 @@ public class Manager implements org.apache.thrift.TBase<Manager, Manager._Fields
       return Integer.valueOf(getStatus());
 
     case DEPARTMENT_ID:
-      return Integer.valueOf(getDepartment_id());
+      return Integer.valueOf(getDepartmentId());
 
     case POSITION_ID:
-      return Integer.valueOf(getPosition_id());
+      return Integer.valueOf(getPositionId());
 
     case ROLE_ID:
-      return Integer.valueOf(getRole_id());
+      return Integer.valueOf(getRoleId());
 
     case CREATOR:
       return getCreator();
@@ -838,11 +838,11 @@ public class Manager implements org.apache.thrift.TBase<Manager, Manager._Fields
     case STATUS:
       return isSetStatus();
     case DEPARTMENT_ID:
-      return isSetDepartment_id();
+      return isSetDepartmentId();
     case POSITION_ID:
-      return isSetPosition_id();
+      return isSetPositionId();
     case ROLE_ID:
-      return isSetRole_id();
+      return isSetRoleId();
     case CREATOR:
       return isSetCreator();
     case CREATETIME:
@@ -931,30 +931,30 @@ public class Manager implements org.apache.thrift.TBase<Manager, Manager._Fields
         return false;
     }
 
-    boolean this_present_department_id = true;
-    boolean that_present_department_id = true;
-    if (this_present_department_id || that_present_department_id) {
-      if (!(this_present_department_id && that_present_department_id))
+    boolean this_present_departmentId = true;
+    boolean that_present_departmentId = true;
+    if (this_present_departmentId || that_present_departmentId) {
+      if (!(this_present_departmentId && that_present_departmentId))
         return false;
-      if (this.department_id != that.department_id)
-        return false;
-    }
-
-    boolean this_present_position_id = true;
-    boolean that_present_position_id = true;
-    if (this_present_position_id || that_present_position_id) {
-      if (!(this_present_position_id && that_present_position_id))
-        return false;
-      if (this.position_id != that.position_id)
+      if (this.departmentId != that.departmentId)
         return false;
     }
 
-    boolean this_present_role_id = true;
-    boolean that_present_role_id = true;
-    if (this_present_role_id || that_present_role_id) {
-      if (!(this_present_role_id && that_present_role_id))
+    boolean this_present_positionId = true;
+    boolean that_present_positionId = true;
+    if (this_present_positionId || that_present_positionId) {
+      if (!(this_present_positionId && that_present_positionId))
         return false;
-      if (this.role_id != that.role_id)
+      if (this.positionId != that.positionId)
+        return false;
+    }
+
+    boolean this_present_roleId = true;
+    boolean that_present_roleId = true;
+    if (this_present_roleId || that_present_roleId) {
+      if (!(this_present_roleId && that_present_roleId))
+        return false;
+      if (this.roleId != that.roleId)
         return false;
     }
 
@@ -1036,20 +1036,20 @@ public class Manager implements org.apache.thrift.TBase<Manager, Manager._Fields
     if (present_status)
       list.add(status);
 
-    boolean present_department_id = true;
-    list.add(present_department_id);
-    if (present_department_id)
-      list.add(department_id);
+    boolean present_departmentId = true;
+    list.add(present_departmentId);
+    if (present_departmentId)
+      list.add(departmentId);
 
-    boolean present_position_id = true;
-    list.add(present_position_id);
-    if (present_position_id)
-      list.add(position_id);
+    boolean present_positionId = true;
+    list.add(present_positionId);
+    if (present_positionId)
+      list.add(positionId);
 
-    boolean present_role_id = true;
-    list.add(present_role_id);
-    if (present_role_id)
-      list.add(role_id);
+    boolean present_roleId = true;
+    list.add(present_roleId);
+    if (present_roleId)
+      list.add(roleId);
 
     boolean present_creator = true && (isSetCreator());
     list.add(present_creator);
@@ -1152,32 +1152,32 @@ public class Manager implements org.apache.thrift.TBase<Manager, Manager._Fields
         return lastComparison;
       }
     }
-    lastComparison = Boolean.valueOf(isSetDepartment_id()).compareTo(other.isSetDepartment_id());
+    lastComparison = Boolean.valueOf(isSetDepartmentId()).compareTo(other.isSetDepartmentId());
     if (lastComparison != 0) {
       return lastComparison;
     }
-    if (isSetDepartment_id()) {
-      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.department_id, other.department_id);
+    if (isSetDepartmentId()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.departmentId, other.departmentId);
       if (lastComparison != 0) {
         return lastComparison;
       }
     }
-    lastComparison = Boolean.valueOf(isSetPosition_id()).compareTo(other.isSetPosition_id());
+    lastComparison = Boolean.valueOf(isSetPositionId()).compareTo(other.isSetPositionId());
     if (lastComparison != 0) {
       return lastComparison;
     }
-    if (isSetPosition_id()) {
-      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.position_id, other.position_id);
+    if (isSetPositionId()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.positionId, other.positionId);
       if (lastComparison != 0) {
         return lastComparison;
       }
     }
-    lastComparison = Boolean.valueOf(isSetRole_id()).compareTo(other.isSetRole_id());
+    lastComparison = Boolean.valueOf(isSetRoleId()).compareTo(other.isSetRoleId());
     if (lastComparison != 0) {
       return lastComparison;
     }
-    if (isSetRole_id()) {
-      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.role_id, other.role_id);
+    if (isSetRoleId()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.roleId, other.roleId);
       if (lastComparison != 0) {
         return lastComparison;
       }
@@ -1290,16 +1290,16 @@ public class Manager implements org.apache.thrift.TBase<Manager, Manager._Fields
     sb.append(this.status);
     first = false;
     if (!first) sb.append(", ");
-    sb.append("department_id:");
-    sb.append(this.department_id);
+    sb.append("departmentId:");
+    sb.append(this.departmentId);
     first = false;
     if (!first) sb.append(", ");
-    sb.append("position_id:");
-    sb.append(this.position_id);
+    sb.append("positionId:");
+    sb.append(this.positionId);
     first = false;
     if (!first) sb.append(", ");
-    sb.append("role_id:");
-    sb.append(this.role_id);
+    sb.append("roleId:");
+    sb.append(this.roleId);
     first = false;
     if (!first) sb.append(", ");
     sb.append("creator:");
@@ -1436,24 +1436,24 @@ public class Manager implements org.apache.thrift.TBase<Manager, Manager._Fields
             break;
           case 8: // DEPARTMENT_ID
             if (schemeField.type == org.apache.thrift.protocol.TType.I32) {
-              struct.department_id = iprot.readI32();
-              struct.setDepartment_idIsSet(true);
+              struct.departmentId = iprot.readI32();
+              struct.setDepartmentIdIsSet(true);
             } else { 
               org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
             }
             break;
           case 9: // POSITION_ID
             if (schemeField.type == org.apache.thrift.protocol.TType.I32) {
-              struct.position_id = iprot.readI32();
-              struct.setPosition_idIsSet(true);
+              struct.positionId = iprot.readI32();
+              struct.setPositionIdIsSet(true);
             } else { 
               org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
             }
             break;
           case 10: // ROLE_ID
             if (schemeField.type == org.apache.thrift.protocol.TType.I32) {
-              struct.role_id = iprot.readI32();
-              struct.setRole_idIsSet(true);
+              struct.roleId = iprot.readI32();
+              struct.setRoleIdIsSet(true);
             } else { 
               org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
             }
@@ -1537,13 +1537,13 @@ public class Manager implements org.apache.thrift.TBase<Manager, Manager._Fields
       oprot.writeI32(struct.status);
       oprot.writeFieldEnd();
       oprot.writeFieldBegin(DEPARTMENT_ID_FIELD_DESC);
-      oprot.writeI32(struct.department_id);
+      oprot.writeI32(struct.departmentId);
       oprot.writeFieldEnd();
       oprot.writeFieldBegin(POSITION_ID_FIELD_DESC);
-      oprot.writeI32(struct.position_id);
+      oprot.writeI32(struct.positionId);
       oprot.writeFieldEnd();
       oprot.writeFieldBegin(ROLE_ID_FIELD_DESC);
-      oprot.writeI32(struct.role_id);
+      oprot.writeI32(struct.roleId);
       oprot.writeFieldEnd();
       if (struct.creator != null) {
         oprot.writeFieldBegin(CREATOR_FIELD_DESC);
@@ -1604,13 +1604,13 @@ public class Manager implements org.apache.thrift.TBase<Manager, Manager._Fields
       if (struct.isSetStatus()) {
         optionals.set(6);
       }
-      if (struct.isSetDepartment_id()) {
+      if (struct.isSetDepartmentId()) {
         optionals.set(7);
       }
-      if (struct.isSetPosition_id()) {
+      if (struct.isSetPositionId()) {
         optionals.set(8);
       }
-      if (struct.isSetRole_id()) {
+      if (struct.isSetRoleId()) {
         optionals.set(9);
       }
       if (struct.isSetCreator()) {
@@ -1647,14 +1647,14 @@ public class Manager implements org.apache.thrift.TBase<Manager, Manager._Fields
       if (struct.isSetStatus()) {
         oprot.writeI32(struct.status);
       }
-      if (struct.isSetDepartment_id()) {
-        oprot.writeI32(struct.department_id);
+      if (struct.isSetDepartmentId()) {
+        oprot.writeI32(struct.departmentId);
       }
-      if (struct.isSetPosition_id()) {
-        oprot.writeI32(struct.position_id);
+      if (struct.isSetPositionId()) {
+        oprot.writeI32(struct.positionId);
       }
-      if (struct.isSetRole_id()) {
-        oprot.writeI32(struct.role_id);
+      if (struct.isSetRoleId()) {
+        oprot.writeI32(struct.roleId);
       }
       if (struct.isSetCreator()) {
         oprot.writeString(struct.creator);
@@ -1703,16 +1703,16 @@ public class Manager implements org.apache.thrift.TBase<Manager, Manager._Fields
         struct.setStatusIsSet(true);
       }
       if (incoming.get(7)) {
-        struct.department_id = iprot.readI32();
-        struct.setDepartment_idIsSet(true);
+        struct.departmentId = iprot.readI32();
+        struct.setDepartmentIdIsSet(true);
       }
       if (incoming.get(8)) {
-        struct.position_id = iprot.readI32();
-        struct.setPosition_idIsSet(true);
+        struct.positionId = iprot.readI32();
+        struct.setPositionIdIsSet(true);
       }
       if (incoming.get(9)) {
-        struct.role_id = iprot.readI32();
-        struct.setRole_idIsSet(true);
+        struct.roleId = iprot.readI32();
+        struct.setRoleIdIsSet(true);
       }
       if (incoming.get(10)) {
         struct.creator = iprot.readString();

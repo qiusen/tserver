@@ -42,8 +42,8 @@ public class Department implements org.apache.thrift.TBase<Department, Departmen
   private static final org.apache.thrift.protocol.TField NAME_FIELD_DESC = new org.apache.thrift.protocol.TField("name", org.apache.thrift.protocol.TType.STRING, (short)2);
   private static final org.apache.thrift.protocol.TField CODE_FIELD_DESC = new org.apache.thrift.protocol.TField("code", org.apache.thrift.protocol.TType.STRING, (short)3);
   private static final org.apache.thrift.protocol.TField TYPE_FIELD_DESC = new org.apache.thrift.protocol.TField("type", org.apache.thrift.protocol.TType.I32, (short)4);
-  private static final org.apache.thrift.protocol.TField LEADER_EMAIL_FIELD_DESC = new org.apache.thrift.protocol.TField("leader_email", org.apache.thrift.protocol.TType.STRING, (short)5);
-  private static final org.apache.thrift.protocol.TField SUPER_ID_FIELD_DESC = new org.apache.thrift.protocol.TField("super_id", org.apache.thrift.protocol.TType.I32, (short)6);
+  private static final org.apache.thrift.protocol.TField LEADER_EMAIL_FIELD_DESC = new org.apache.thrift.protocol.TField("leaderEmail", org.apache.thrift.protocol.TType.STRING, (short)5);
+  private static final org.apache.thrift.protocol.TField SUPER_ID_FIELD_DESC = new org.apache.thrift.protocol.TField("superId", org.apache.thrift.protocol.TType.I32, (short)6);
   private static final org.apache.thrift.protocol.TField CREATOR_FIELD_DESC = new org.apache.thrift.protocol.TField("creator", org.apache.thrift.protocol.TType.STRING, (short)7);
   private static final org.apache.thrift.protocol.TField CREATETIME_FIELD_DESC = new org.apache.thrift.protocol.TField("createtime", org.apache.thrift.protocol.TType.STRING, (short)8);
   private static final org.apache.thrift.protocol.TField UPDATOR_FIELD_DESC = new org.apache.thrift.protocol.TField("updator", org.apache.thrift.protocol.TType.STRING, (short)9);
@@ -59,8 +59,8 @@ public class Department implements org.apache.thrift.TBase<Department, Departmen
   public String name; // required
   public String code; // required
   public int type; // required
-  public String leader_email; // required
-  public int super_id; // required
+  public String leaderEmail; // required
+  public int superId; // required
   public String creator; // required
   public String createtime; // required
   public String updator; // required
@@ -72,8 +72,8 @@ public class Department implements org.apache.thrift.TBase<Department, Departmen
     NAME((short)2, "name"),
     CODE((short)3, "code"),
     TYPE((short)4, "type"),
-    LEADER_EMAIL((short)5, "leader_email"),
-    SUPER_ID((short)6, "super_id"),
+    LEADER_EMAIL((short)5, "leaderEmail"),
+    SUPER_ID((short)6, "superId"),
     CREATOR((short)7, "creator"),
     CREATETIME((short)8, "createtime"),
     UPDATOR((short)9, "updator"),
@@ -154,7 +154,7 @@ public class Department implements org.apache.thrift.TBase<Department, Departmen
   // isset id assignments
   private static final int __ID_ISSET_ID = 0;
   private static final int __TYPE_ISSET_ID = 1;
-  private static final int __SUPER_ID_ISSET_ID = 2;
+  private static final int __SUPERID_ISSET_ID = 2;
   private byte __isset_bitfield = 0;
   public static final Map<_Fields, org.apache.thrift.meta_data.FieldMetaData> metaDataMap;
   static {
@@ -167,9 +167,9 @@ public class Department implements org.apache.thrift.TBase<Department, Departmen
         new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
     tmpMap.put(_Fields.TYPE, new org.apache.thrift.meta_data.FieldMetaData("type", org.apache.thrift.TFieldRequirementType.DEFAULT, 
         new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.I32)));
-    tmpMap.put(_Fields.LEADER_EMAIL, new org.apache.thrift.meta_data.FieldMetaData("leader_email", org.apache.thrift.TFieldRequirementType.DEFAULT, 
+    tmpMap.put(_Fields.LEADER_EMAIL, new org.apache.thrift.meta_data.FieldMetaData("leaderEmail", org.apache.thrift.TFieldRequirementType.DEFAULT, 
         new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
-    tmpMap.put(_Fields.SUPER_ID, new org.apache.thrift.meta_data.FieldMetaData("super_id", org.apache.thrift.TFieldRequirementType.DEFAULT, 
+    tmpMap.put(_Fields.SUPER_ID, new org.apache.thrift.meta_data.FieldMetaData("superId", org.apache.thrift.TFieldRequirementType.DEFAULT, 
         new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.I32)));
     tmpMap.put(_Fields.CREATOR, new org.apache.thrift.meta_data.FieldMetaData("creator", org.apache.thrift.TFieldRequirementType.DEFAULT, 
         new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
@@ -191,8 +191,8 @@ public class Department implements org.apache.thrift.TBase<Department, Departmen
     String name,
     String code,
     int type,
-    String leader_email,
-    int super_id,
+    String leaderEmail,
+    int superId,
     String creator,
     String createtime,
     String updator,
@@ -205,9 +205,9 @@ public class Department implements org.apache.thrift.TBase<Department, Departmen
     this.code = code;
     this.type = type;
     setTypeIsSet(true);
-    this.leader_email = leader_email;
-    this.super_id = super_id;
-    setSuper_idIsSet(true);
+    this.leaderEmail = leaderEmail;
+    this.superId = superId;
+    setSuperIdIsSet(true);
     this.creator = creator;
     this.createtime = createtime;
     this.updator = updator;
@@ -227,10 +227,10 @@ public class Department implements org.apache.thrift.TBase<Department, Departmen
       this.code = other.code;
     }
     this.type = other.type;
-    if (other.isSetLeader_email()) {
-      this.leader_email = other.leader_email;
+    if (other.isSetLeaderEmail()) {
+      this.leaderEmail = other.leaderEmail;
     }
-    this.super_id = other.super_id;
+    this.superId = other.superId;
     if (other.isSetCreator()) {
       this.creator = other.creator;
     }
@@ -257,9 +257,9 @@ public class Department implements org.apache.thrift.TBase<Department, Departmen
     this.code = null;
     setTypeIsSet(false);
     this.type = 0;
-    this.leader_email = null;
-    setSuper_idIsSet(false);
-    this.super_id = 0;
+    this.leaderEmail = null;
+    setSuperIdIsSet(false);
+    this.superId = 0;
     this.creator = null;
     this.createtime = null;
     this.updator = null;
@@ -360,51 +360,51 @@ public class Department implements org.apache.thrift.TBase<Department, Departmen
     __isset_bitfield = EncodingUtils.setBit(__isset_bitfield, __TYPE_ISSET_ID, value);
   }
 
-  public String getLeader_email() {
-    return this.leader_email;
+  public String getLeaderEmail() {
+    return this.leaderEmail;
   }
 
-  public Department setLeader_email(String leader_email) {
-    this.leader_email = leader_email;
+  public Department setLeaderEmail(String leaderEmail) {
+    this.leaderEmail = leaderEmail;
     return this;
   }
 
-  public void unsetLeader_email() {
-    this.leader_email = null;
+  public void unsetLeaderEmail() {
+    this.leaderEmail = null;
   }
 
-  /** Returns true if field leader_email is set (has been assigned a value) and false otherwise */
-  public boolean isSetLeader_email() {
-    return this.leader_email != null;
+  /** Returns true if field leaderEmail is set (has been assigned a value) and false otherwise */
+  public boolean isSetLeaderEmail() {
+    return this.leaderEmail != null;
   }
 
-  public void setLeader_emailIsSet(boolean value) {
+  public void setLeaderEmailIsSet(boolean value) {
     if (!value) {
-      this.leader_email = null;
+      this.leaderEmail = null;
     }
   }
 
-  public int getSuper_id() {
-    return this.super_id;
+  public int getSuperId() {
+    return this.superId;
   }
 
-  public Department setSuper_id(int super_id) {
-    this.super_id = super_id;
-    setSuper_idIsSet(true);
+  public Department setSuperId(int superId) {
+    this.superId = superId;
+    setSuperIdIsSet(true);
     return this;
   }
 
-  public void unsetSuper_id() {
-    __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __SUPER_ID_ISSET_ID);
+  public void unsetSuperId() {
+    __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __SUPERID_ISSET_ID);
   }
 
-  /** Returns true if field super_id is set (has been assigned a value) and false otherwise */
-  public boolean isSetSuper_id() {
-    return EncodingUtils.testBit(__isset_bitfield, __SUPER_ID_ISSET_ID);
+  /** Returns true if field superId is set (has been assigned a value) and false otherwise */
+  public boolean isSetSuperId() {
+    return EncodingUtils.testBit(__isset_bitfield, __SUPERID_ISSET_ID);
   }
 
-  public void setSuper_idIsSet(boolean value) {
-    __isset_bitfield = EncodingUtils.setBit(__isset_bitfield, __SUPER_ID_ISSET_ID, value);
+  public void setSuperIdIsSet(boolean value) {
+    __isset_bitfield = EncodingUtils.setBit(__isset_bitfield, __SUPERID_ISSET_ID, value);
   }
 
   public String getCreator() {
@@ -539,17 +539,17 @@ public class Department implements org.apache.thrift.TBase<Department, Departmen
 
     case LEADER_EMAIL:
       if (value == null) {
-        unsetLeader_email();
+        unsetLeaderEmail();
       } else {
-        setLeader_email((String)value);
+        setLeaderEmail((String)value);
       }
       break;
 
     case SUPER_ID:
       if (value == null) {
-        unsetSuper_id();
+        unsetSuperId();
       } else {
-        setSuper_id((Integer)value);
+        setSuperId((Integer)value);
       }
       break;
 
@@ -603,10 +603,10 @@ public class Department implements org.apache.thrift.TBase<Department, Departmen
       return Integer.valueOf(getType());
 
     case LEADER_EMAIL:
-      return getLeader_email();
+      return getLeaderEmail();
 
     case SUPER_ID:
-      return Integer.valueOf(getSuper_id());
+      return Integer.valueOf(getSuperId());
 
     case CREATOR:
       return getCreator();
@@ -640,9 +640,9 @@ public class Department implements org.apache.thrift.TBase<Department, Departmen
     case TYPE:
       return isSetType();
     case LEADER_EMAIL:
-      return isSetLeader_email();
+      return isSetLeaderEmail();
     case SUPER_ID:
-      return isSetSuper_id();
+      return isSetSuperId();
     case CREATOR:
       return isSetCreator();
     case CREATETIME:
@@ -704,21 +704,21 @@ public class Department implements org.apache.thrift.TBase<Department, Departmen
         return false;
     }
 
-    boolean this_present_leader_email = true && this.isSetLeader_email();
-    boolean that_present_leader_email = true && that.isSetLeader_email();
-    if (this_present_leader_email || that_present_leader_email) {
-      if (!(this_present_leader_email && that_present_leader_email))
+    boolean this_present_leaderEmail = true && this.isSetLeaderEmail();
+    boolean that_present_leaderEmail = true && that.isSetLeaderEmail();
+    if (this_present_leaderEmail || that_present_leaderEmail) {
+      if (!(this_present_leaderEmail && that_present_leaderEmail))
         return false;
-      if (!this.leader_email.equals(that.leader_email))
+      if (!this.leaderEmail.equals(that.leaderEmail))
         return false;
     }
 
-    boolean this_present_super_id = true;
-    boolean that_present_super_id = true;
-    if (this_present_super_id || that_present_super_id) {
-      if (!(this_present_super_id && that_present_super_id))
+    boolean this_present_superId = true;
+    boolean that_present_superId = true;
+    if (this_present_superId || that_present_superId) {
+      if (!(this_present_superId && that_present_superId))
         return false;
-      if (this.super_id != that.super_id)
+      if (this.superId != that.superId)
         return false;
     }
 
@@ -785,15 +785,15 @@ public class Department implements org.apache.thrift.TBase<Department, Departmen
     if (present_type)
       list.add(type);
 
-    boolean present_leader_email = true && (isSetLeader_email());
-    list.add(present_leader_email);
-    if (present_leader_email)
-      list.add(leader_email);
+    boolean present_leaderEmail = true && (isSetLeaderEmail());
+    list.add(present_leaderEmail);
+    if (present_leaderEmail)
+      list.add(leaderEmail);
 
-    boolean present_super_id = true;
-    list.add(present_super_id);
-    if (present_super_id)
-      list.add(super_id);
+    boolean present_superId = true;
+    list.add(present_superId);
+    if (present_superId)
+      list.add(superId);
 
     boolean present_creator = true && (isSetCreator());
     list.add(present_creator);
@@ -866,22 +866,22 @@ public class Department implements org.apache.thrift.TBase<Department, Departmen
         return lastComparison;
       }
     }
-    lastComparison = Boolean.valueOf(isSetLeader_email()).compareTo(other.isSetLeader_email());
+    lastComparison = Boolean.valueOf(isSetLeaderEmail()).compareTo(other.isSetLeaderEmail());
     if (lastComparison != 0) {
       return lastComparison;
     }
-    if (isSetLeader_email()) {
-      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.leader_email, other.leader_email);
+    if (isSetLeaderEmail()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.leaderEmail, other.leaderEmail);
       if (lastComparison != 0) {
         return lastComparison;
       }
     }
-    lastComparison = Boolean.valueOf(isSetSuper_id()).compareTo(other.isSetSuper_id());
+    lastComparison = Boolean.valueOf(isSetSuperId()).compareTo(other.isSetSuperId());
     if (lastComparison != 0) {
       return lastComparison;
     }
-    if (isSetSuper_id()) {
-      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.super_id, other.super_id);
+    if (isSetSuperId()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.superId, other.superId);
       if (lastComparison != 0) {
         return lastComparison;
       }
@@ -970,16 +970,16 @@ public class Department implements org.apache.thrift.TBase<Department, Departmen
     sb.append(this.type);
     first = false;
     if (!first) sb.append(", ");
-    sb.append("leader_email:");
-    if (this.leader_email == null) {
+    sb.append("leaderEmail:");
+    if (this.leaderEmail == null) {
       sb.append("null");
     } else {
-      sb.append(this.leader_email);
+      sb.append(this.leaderEmail);
     }
     first = false;
     if (!first) sb.append(", ");
-    sb.append("super_id:");
-    sb.append(this.super_id);
+    sb.append("superId:");
+    sb.append(this.superId);
     first = false;
     if (!first) sb.append(", ");
     sb.append("creator:");
@@ -1092,16 +1092,16 @@ public class Department implements org.apache.thrift.TBase<Department, Departmen
             break;
           case 5: // LEADER_EMAIL
             if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
-              struct.leader_email = iprot.readString();
-              struct.setLeader_emailIsSet(true);
+              struct.leaderEmail = iprot.readString();
+              struct.setLeaderEmailIsSet(true);
             } else { 
               org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
             }
             break;
           case 6: // SUPER_ID
             if (schemeField.type == org.apache.thrift.protocol.TType.I32) {
-              struct.super_id = iprot.readI32();
-              struct.setSuper_idIsSet(true);
+              struct.superId = iprot.readI32();
+              struct.setSuperIdIsSet(true);
             } else { 
               org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
             }
@@ -1169,13 +1169,13 @@ public class Department implements org.apache.thrift.TBase<Department, Departmen
       oprot.writeFieldBegin(TYPE_FIELD_DESC);
       oprot.writeI32(struct.type);
       oprot.writeFieldEnd();
-      if (struct.leader_email != null) {
+      if (struct.leaderEmail != null) {
         oprot.writeFieldBegin(LEADER_EMAIL_FIELD_DESC);
-        oprot.writeString(struct.leader_email);
+        oprot.writeString(struct.leaderEmail);
         oprot.writeFieldEnd();
       }
       oprot.writeFieldBegin(SUPER_ID_FIELD_DESC);
-      oprot.writeI32(struct.super_id);
+      oprot.writeI32(struct.superId);
       oprot.writeFieldEnd();
       if (struct.creator != null) {
         oprot.writeFieldBegin(CREATOR_FIELD_DESC);
@@ -1227,10 +1227,10 @@ public class Department implements org.apache.thrift.TBase<Department, Departmen
       if (struct.isSetType()) {
         optionals.set(3);
       }
-      if (struct.isSetLeader_email()) {
+      if (struct.isSetLeaderEmail()) {
         optionals.set(4);
       }
-      if (struct.isSetSuper_id()) {
+      if (struct.isSetSuperId()) {
         optionals.set(5);
       }
       if (struct.isSetCreator()) {
@@ -1258,11 +1258,11 @@ public class Department implements org.apache.thrift.TBase<Department, Departmen
       if (struct.isSetType()) {
         oprot.writeI32(struct.type);
       }
-      if (struct.isSetLeader_email()) {
-        oprot.writeString(struct.leader_email);
+      if (struct.isSetLeaderEmail()) {
+        oprot.writeString(struct.leaderEmail);
       }
-      if (struct.isSetSuper_id()) {
-        oprot.writeI32(struct.super_id);
+      if (struct.isSetSuperId()) {
+        oprot.writeI32(struct.superId);
       }
       if (struct.isSetCreator()) {
         oprot.writeString(struct.creator);
@@ -1299,12 +1299,12 @@ public class Department implements org.apache.thrift.TBase<Department, Departmen
         struct.setTypeIsSet(true);
       }
       if (incoming.get(4)) {
-        struct.leader_email = iprot.readString();
-        struct.setLeader_emailIsSet(true);
+        struct.leaderEmail = iprot.readString();
+        struct.setLeaderEmailIsSet(true);
       }
       if (incoming.get(5)) {
-        struct.super_id = iprot.readI32();
-        struct.setSuper_idIsSet(true);
+        struct.superId = iprot.readI32();
+        struct.setSuperIdIsSet(true);
       }
       if (incoming.get(6)) {
         struct.creator = iprot.readString();

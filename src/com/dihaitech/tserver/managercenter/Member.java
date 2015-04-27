@@ -42,7 +42,7 @@ public class Member implements org.apache.thrift.TBase<Member, Member._Fields>, 
   private static final org.apache.thrift.protocol.TField USERNAME_FIELD_DESC = new org.apache.thrift.protocol.TField("username", org.apache.thrift.protocol.TType.STRING, (short)2);
   private static final org.apache.thrift.protocol.TField PASSWD_FIELD_DESC = new org.apache.thrift.protocol.TField("passwd", org.apache.thrift.protocol.TType.STRING, (short)3);
   private static final org.apache.thrift.protocol.TField NAME_FIELD_DESC = new org.apache.thrift.protocol.TField("name", org.apache.thrift.protocol.TType.STRING, (short)4);
-  private static final org.apache.thrift.protocol.TField LOGO_URL_FIELD_DESC = new org.apache.thrift.protocol.TField("logo_url", org.apache.thrift.protocol.TType.STRING, (short)5);
+  private static final org.apache.thrift.protocol.TField LOGO_URL_FIELD_DESC = new org.apache.thrift.protocol.TField("logoUrl", org.apache.thrift.protocol.TType.STRING, (short)5);
   private static final org.apache.thrift.protocol.TField STATUS_FIELD_DESC = new org.apache.thrift.protocol.TField("status", org.apache.thrift.protocol.TType.I32, (short)6);
   private static final org.apache.thrift.protocol.TField REGTIME_FIELD_DESC = new org.apache.thrift.protocol.TField("regtime", org.apache.thrift.protocol.TType.STRING, (short)7);
   private static final org.apache.thrift.protocol.TField LOGINTIME_FIELD_DESC = new org.apache.thrift.protocol.TField("logintime", org.apache.thrift.protocol.TType.STRING, (short)8);
@@ -57,7 +57,7 @@ public class Member implements org.apache.thrift.TBase<Member, Member._Fields>, 
   public String username; // required
   public String passwd; // required
   public String name; // required
-  public String logo_url; // required
+  public String logoUrl; // required
   public int status; // required
   public String regtime; // required
   public String logintime; // required
@@ -68,7 +68,7 @@ public class Member implements org.apache.thrift.TBase<Member, Member._Fields>, 
     USERNAME((short)2, "username"),
     PASSWD((short)3, "passwd"),
     NAME((short)4, "name"),
-    LOGO_URL((short)5, "logo_url"),
+    LOGO_URL((short)5, "logoUrl"),
     STATUS((short)6, "status"),
     REGTIME((short)7, "regtime"),
     LOGINTIME((short)8, "logintime");
@@ -156,7 +156,7 @@ public class Member implements org.apache.thrift.TBase<Member, Member._Fields>, 
         new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
     tmpMap.put(_Fields.NAME, new org.apache.thrift.meta_data.FieldMetaData("name", org.apache.thrift.TFieldRequirementType.DEFAULT, 
         new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
-    tmpMap.put(_Fields.LOGO_URL, new org.apache.thrift.meta_data.FieldMetaData("logo_url", org.apache.thrift.TFieldRequirementType.DEFAULT, 
+    tmpMap.put(_Fields.LOGO_URL, new org.apache.thrift.meta_data.FieldMetaData("logoUrl", org.apache.thrift.TFieldRequirementType.DEFAULT, 
         new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
     tmpMap.put(_Fields.STATUS, new org.apache.thrift.meta_data.FieldMetaData("status", org.apache.thrift.TFieldRequirementType.DEFAULT, 
         new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.I32)));
@@ -176,7 +176,7 @@ public class Member implements org.apache.thrift.TBase<Member, Member._Fields>, 
     String username,
     String passwd,
     String name,
-    String logo_url,
+    String logoUrl,
     int status,
     String regtime,
     String logintime)
@@ -187,7 +187,7 @@ public class Member implements org.apache.thrift.TBase<Member, Member._Fields>, 
     this.username = username;
     this.passwd = passwd;
     this.name = name;
-    this.logo_url = logo_url;
+    this.logoUrl = logoUrl;
     this.status = status;
     setStatusIsSet(true);
     this.regtime = regtime;
@@ -209,8 +209,8 @@ public class Member implements org.apache.thrift.TBase<Member, Member._Fields>, 
     if (other.isSetName()) {
       this.name = other.name;
     }
-    if (other.isSetLogo_url()) {
-      this.logo_url = other.logo_url;
+    if (other.isSetLogoUrl()) {
+      this.logoUrl = other.logoUrl;
     }
     this.status = other.status;
     if (other.isSetRegtime()) {
@@ -232,7 +232,7 @@ public class Member implements org.apache.thrift.TBase<Member, Member._Fields>, 
     this.username = null;
     this.passwd = null;
     this.name = null;
-    this.logo_url = null;
+    this.logoUrl = null;
     setStatusIsSet(false);
     this.status = 0;
     this.regtime = null;
@@ -334,27 +334,27 @@ public class Member implements org.apache.thrift.TBase<Member, Member._Fields>, 
     }
   }
 
-  public String getLogo_url() {
-    return this.logo_url;
+  public String getLogoUrl() {
+    return this.logoUrl;
   }
 
-  public Member setLogo_url(String logo_url) {
-    this.logo_url = logo_url;
+  public Member setLogoUrl(String logoUrl) {
+    this.logoUrl = logoUrl;
     return this;
   }
 
-  public void unsetLogo_url() {
-    this.logo_url = null;
+  public void unsetLogoUrl() {
+    this.logoUrl = null;
   }
 
-  /** Returns true if field logo_url is set (has been assigned a value) and false otherwise */
-  public boolean isSetLogo_url() {
-    return this.logo_url != null;
+  /** Returns true if field logoUrl is set (has been assigned a value) and false otherwise */
+  public boolean isSetLogoUrl() {
+    return this.logoUrl != null;
   }
 
-  public void setLogo_urlIsSet(boolean value) {
+  public void setLogoUrlIsSet(boolean value) {
     if (!value) {
-      this.logo_url = null;
+      this.logoUrl = null;
     }
   }
 
@@ -465,9 +465,9 @@ public class Member implements org.apache.thrift.TBase<Member, Member._Fields>, 
 
     case LOGO_URL:
       if (value == null) {
-        unsetLogo_url();
+        unsetLogoUrl();
       } else {
-        setLogo_url((String)value);
+        setLogoUrl((String)value);
       }
       break;
 
@@ -513,7 +513,7 @@ public class Member implements org.apache.thrift.TBase<Member, Member._Fields>, 
       return getName();
 
     case LOGO_URL:
-      return getLogo_url();
+      return getLogoUrl();
 
     case STATUS:
       return Integer.valueOf(getStatus());
@@ -544,7 +544,7 @@ public class Member implements org.apache.thrift.TBase<Member, Member._Fields>, 
     case NAME:
       return isSetName();
     case LOGO_URL:
-      return isSetLogo_url();
+      return isSetLogoUrl();
     case STATUS:
       return isSetStatus();
     case REGTIME:
@@ -604,12 +604,12 @@ public class Member implements org.apache.thrift.TBase<Member, Member._Fields>, 
         return false;
     }
 
-    boolean this_present_logo_url = true && this.isSetLogo_url();
-    boolean that_present_logo_url = true && that.isSetLogo_url();
-    if (this_present_logo_url || that_present_logo_url) {
-      if (!(this_present_logo_url && that_present_logo_url))
+    boolean this_present_logoUrl = true && this.isSetLogoUrl();
+    boolean that_present_logoUrl = true && that.isSetLogoUrl();
+    if (this_present_logoUrl || that_present_logoUrl) {
+      if (!(this_present_logoUrl && that_present_logoUrl))
         return false;
-      if (!this.logo_url.equals(that.logo_url))
+      if (!this.logoUrl.equals(that.logoUrl))
         return false;
     }
 
@@ -667,10 +667,10 @@ public class Member implements org.apache.thrift.TBase<Member, Member._Fields>, 
     if (present_name)
       list.add(name);
 
-    boolean present_logo_url = true && (isSetLogo_url());
-    list.add(present_logo_url);
-    if (present_logo_url)
-      list.add(logo_url);
+    boolean present_logoUrl = true && (isSetLogoUrl());
+    list.add(present_logoUrl);
+    if (present_logoUrl)
+      list.add(logoUrl);
 
     boolean present_status = true;
     list.add(present_status);
@@ -738,12 +738,12 @@ public class Member implements org.apache.thrift.TBase<Member, Member._Fields>, 
         return lastComparison;
       }
     }
-    lastComparison = Boolean.valueOf(isSetLogo_url()).compareTo(other.isSetLogo_url());
+    lastComparison = Boolean.valueOf(isSetLogoUrl()).compareTo(other.isSetLogoUrl());
     if (lastComparison != 0) {
       return lastComparison;
     }
-    if (isSetLogo_url()) {
-      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.logo_url, other.logo_url);
+    if (isSetLogoUrl()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.logoUrl, other.logoUrl);
       if (lastComparison != 0) {
         return lastComparison;
       }
@@ -826,11 +826,11 @@ public class Member implements org.apache.thrift.TBase<Member, Member._Fields>, 
     }
     first = false;
     if (!first) sb.append(", ");
-    sb.append("logo_url:");
-    if (this.logo_url == null) {
+    sb.append("logoUrl:");
+    if (this.logoUrl == null) {
       sb.append("null");
     } else {
-      sb.append(this.logo_url);
+      sb.append(this.logoUrl);
     }
     first = false;
     if (!first) sb.append(", ");
@@ -932,8 +932,8 @@ public class Member implements org.apache.thrift.TBase<Member, Member._Fields>, 
             break;
           case 5: // LOGO_URL
             if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
-              struct.logo_url = iprot.readString();
-              struct.setLogo_urlIsSet(true);
+              struct.logoUrl = iprot.readString();
+              struct.setLogoUrlIsSet(true);
             } else { 
               org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
             }
@@ -995,9 +995,9 @@ public class Member implements org.apache.thrift.TBase<Member, Member._Fields>, 
         oprot.writeString(struct.name);
         oprot.writeFieldEnd();
       }
-      if (struct.logo_url != null) {
+      if (struct.logoUrl != null) {
         oprot.writeFieldBegin(LOGO_URL_FIELD_DESC);
-        oprot.writeString(struct.logo_url);
+        oprot.writeString(struct.logoUrl);
         oprot.writeFieldEnd();
       }
       oprot.writeFieldBegin(STATUS_FIELD_DESC);
@@ -1043,7 +1043,7 @@ public class Member implements org.apache.thrift.TBase<Member, Member._Fields>, 
       if (struct.isSetName()) {
         optionals.set(3);
       }
-      if (struct.isSetLogo_url()) {
+      if (struct.isSetLogoUrl()) {
         optionals.set(4);
       }
       if (struct.isSetStatus()) {
@@ -1068,8 +1068,8 @@ public class Member implements org.apache.thrift.TBase<Member, Member._Fields>, 
       if (struct.isSetName()) {
         oprot.writeString(struct.name);
       }
-      if (struct.isSetLogo_url()) {
-        oprot.writeString(struct.logo_url);
+      if (struct.isSetLogoUrl()) {
+        oprot.writeString(struct.logoUrl);
       }
       if (struct.isSetStatus()) {
         oprot.writeI32(struct.status);
@@ -1103,8 +1103,8 @@ public class Member implements org.apache.thrift.TBase<Member, Member._Fields>, 
         struct.setNameIsSet(true);
       }
       if (incoming.get(4)) {
-        struct.logo_url = iprot.readString();
-        struct.setLogo_urlIsSet(true);
+        struct.logoUrl = iprot.readString();
+        struct.setLogoUrlIsSet(true);
       }
       if (incoming.get(5)) {
         struct.status = iprot.readI32();
